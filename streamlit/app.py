@@ -1,9 +1,18 @@
 import streamlit as st
 import spacy
 import re
+import subprocess
 
-# Load spaCy model
-nlp = spacy.load("en_core_web_sm")
+# ✅ Ensure spaCy model is available
+def ensure_spacy_model(model_name="en_core_web_sm"):
+    try:
+        return spacy.load(model_name)
+    except OSError:
+        subprocess.run(["python", "-m", "spacy", "download", model_name])
+        return spacy.load(model_name)
+
+# ✅ Load model
+nlp = ensure_spacy_model()
 
 # -----------------------------
 # 🔍 NER + Regex Extractor
