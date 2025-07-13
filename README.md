@@ -93,6 +93,6 @@ On 01 Dec 2021 at 05:30 PM, an accident occurred in THIRUVANANTHAPURAM CITY unde
 ## 🌍 Live Deployment (via Streamlit Cloud)
 
 The app is deployed on **Streamlit Cloud** and can be accessed at:  
-👉 [Live App Link]([https://ner-nlp.streamlit.app](https://ner-nlp-hkduksfhgcnufp7cjbucqp.streamlit.app/)) 
+👉 [[https://ner-nlp.streamlit.app](https://ner-nlp-hkduksfhgcnufp7cjbucqp.streamlit.app/)]() 
 
 ---
